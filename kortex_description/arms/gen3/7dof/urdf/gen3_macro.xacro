@@ -63,7 +63,7 @@
       <limit
         effort="39"
         velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}half_arm_1_link">
       <inertial>
@@ -98,7 +98,7 @@
       <axis
         xyz="0 0 1" />
       <limit lower="-2.41" upper="2.41" effort="39" velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}half_arm_2_link">
       <inertial>
@@ -135,7 +135,7 @@
       <limit
         effort="39"
         velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}forearm_link">
       <inertial>
@@ -170,7 +170,7 @@
       <axis
         xyz="0 0 1" />
       <limit lower="-2.66" upper="2.66" effort="39" velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}spherical_wrist_1_link">
       <inertial>
@@ -205,9 +205,9 @@
       <axis
         xyz="0 0 1" />
       <limit
-        effort="9"
+        effort="50"
         velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}spherical_wrist_2_link">
       <inertial>
@@ -241,8 +241,8 @@
         link="${prefix}spherical_wrist_2_link" />
       <axis
         xyz="0 0 1" />
-      <limit lower="-2.23" upper="2.23" effort="9" velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <limit lower="-2.23" upper="2.23" effort="50" velocity="0.8727" />
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}bracelet_link">
       <inertial>
@@ -277,9 +277,9 @@
       <axis
         xyz="0 0 1" />
       <limit
-        effort="9"
+        effort="50"
         velocity="0.8727" />
-      <dynamics damping="0.5" friction="0.5"/>
+      <dynamics damping="0.5" friction="0.05"/>
     </joint>
     <link name="${prefix}end_effector_link" />
     <joint
